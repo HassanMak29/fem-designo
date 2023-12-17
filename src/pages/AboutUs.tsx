@@ -1,11 +1,15 @@
 import aboutUsPattern from '../assets/about/desktop/bg-pattern-hero-about-desktop.svg'
 import aboutHero from '../assets/about/desktop/image-about-hero.jpg'
-import worldClassTalentHero from '../assets/about/desktop/image-world-class-talent.jpg'
 import realDealHero from '../assets/about/desktop/image-real-deal.jpg'
+import worldClassTalentHero from '../assets/about/desktop/image-world-class-talent.jpg'
+import australiaImage from '../assets/shared/desktop/illustration-australia.svg'
+import canadaImage from '../assets/shared/desktop/illustration-canada.svg'
+import ukImage from '../assets/shared/desktop/illustration-united-kingdom.svg'
 import AboutCard from '../components/AboutCard'
 import BgPattern from '../components/BgPattern'
 import CallToAction from '../components/CallToAction'
 import Hero from '../components/Hero'
+import Location from '../components/Location'
 import Locations from '../components/Locations'
 
 function AboutUs() {
@@ -40,7 +44,15 @@ function AboutUs() {
           'Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.',
         ]}
       />
-      <Locations />
+      <Locations>
+        <Location img={canadaImage} title='Canada' bgCircleCn='rotate-90' />
+        <Location img={australiaImage} title='Australia' />
+        <Location
+          img={ukImage}
+          title='United kingdom'
+          bgCircleCn='-rotate-90'
+        />
+      </Locations>
       <AboutCard
         className='z-10'
         img={realDealHero}
