@@ -18,7 +18,7 @@ function Icon({ name, icon }: { name: string; icon: string }) {
 
 function Footer() {
   return (
-    <footer className='h-96 pt-36 bg-primaryBlack'>
+    <footer className='z-10 h-96 pt-36 bg-primaryBlack'>
       <MaxWidthWrapper>
         <Header invert={true} className='p-0 mb-10' />
         <div className='h-[1px] bg-white opacity-10' />

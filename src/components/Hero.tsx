@@ -12,7 +12,7 @@ function Hero({ className, patternClassName, pattern, children }: HeroProps) {
   return (
     <section
       className={cn(
-        'rounded-2xl bg-primaryPeach flex justify-between items-center overflow-hidden relative',
+        'rounded-2xl bg-primaryPeach flex items-center overflow-hidden relative',
         className
       )}>
       {children}

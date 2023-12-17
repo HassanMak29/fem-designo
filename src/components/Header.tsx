@@ -36,11 +36,13 @@ function Header({ invert, className }: HeaderProps) {
     <header>
       <MaxWidthWrapper
         className={cn('flex justify-between items-center py-16', className)}>
-        <img
-          src={invert ? lightLogo : darkLogo}
-          alt='designo logo'
-          className='h-6'
-        />
+        <Link to='/'>
+          <img
+            src={invert ? lightLogo : darkLogo}
+            alt='designo logo'
+            className='h-6'
+          />
+        </Link>
         <nav>
           <ul className='flex items-center gap-10 text-sm uppercase'>
             <NavLink

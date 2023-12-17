@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <MaxWidthWrapper className='relative grow flex flex-col'>
+      <MaxWidthWrapper className='relative grow flex flex-col gap-40'>
         <Outlet />
       </MaxWidthWrapper>
       <Footer />

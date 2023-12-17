@@ -47,7 +47,7 @@
   }
 
   .btn.dark {
-    @apply bg-primaryPeach;
+    @apply bg-primaryPeach text-white;
   }
 
   .btn:hover {

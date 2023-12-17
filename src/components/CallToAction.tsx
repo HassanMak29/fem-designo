@@ -2,7 +2,7 @@ import patternCTA from '../assets/shared/desktop/bg-pattern-call-to-action.svg'
 
 function CallToAction() {
   return (
-    <section className='w-full rounded-2xl h-72 bg-primaryPeach mt-auto -mb-20 px-24 py-20 flex justify-between items-center relative overflow-hidden'>
+    <section className='w-full rounded-2xl h-72 bg-primaryPeach mt-auto -mb-20 px-24 py-20 flex justify-between items-center relative overflow-hidden z-20'>
       <div className='w-[460px] z-10'>
         <h4 className='w-[270px] h-24 font-medium text-white text-[40px] leading-10'>
           Let’s talk about your project
