@@ -9,7 +9,6 @@ function ContactUsForm() {
     reset,
   } = useForm()
 
-  console.log('errors', errors)
   const onSubmit = (data: FieldValues) => {
     console.log('data', data)
     reset()
