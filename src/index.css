@@ -39,7 +39,7 @@
 
 @layer components {
   .btn {
-    @apply w-[152px] h-[56px] shrink-0 rounded-[8px] uppercase transition-all;
+    @apply w-[152px] h-[56px] shrink-0 rounded-[8px] uppercase transition-all font-medium tracking-[1px] text-[15px];
   }
 
   .btn.white {

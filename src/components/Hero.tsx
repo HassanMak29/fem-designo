@@ -19,7 +19,7 @@ function Hero({ className, patternClassName, pattern, children }: HeroProps) {
       <img
         src={pattern}
         alt='hero pattern'
-        className={cn('absolute', patternClassName)}
+        className={cn('absolute -z-10', patternClassName)}
       />
     </section>
   )
