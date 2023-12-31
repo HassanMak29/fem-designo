@@ -1,7 +1,3 @@
-import aboutUsPattern from '../assets/about/desktop/bg-pattern-hero-about-desktop.svg'
-import aboutHero from '../assets/about/desktop/image-about-hero.jpg'
-import realDealHero from '../assets/about/desktop/image-real-deal.jpg'
-import worldClassTalentHero from '../assets/about/desktop/image-world-class-talent.jpg'
 import australiaImage from '../assets/shared/desktop/illustration-australia.svg'
 import canadaImage from '../assets/shared/desktop/illustration-canada.svg'
 import ukImage from '../assets/shared/desktop/illustration-united-kingdom.svg'
@@ -16,12 +12,12 @@ function AboutUs() {
   return (
     <>
       <Hero
-        pattern={aboutUsPattern}
-        patternClassName='-top-40 left-0'
-        className='h-[480px] py-36 px-24 z-10 justify-between'>
-        <div className='flex flex-col gap-8'>
+        pattern='max-md:bg-[url("./assets/about/mobile/bg-pattern-hero-about-mobile.svg")] md:bg-[url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg")]'
+        patternClassName='h-[292px] w-[584px] bottom-[200px] max-md:right-0 md:h-[640px] md:w-[640px] md:bottom-[100px] md:-left-[120px] lg:bottom-0 lg:left-0'
+        className='h-[725px] md:h-[632px] lg:h-[480px] z-10 justify-between'>
+        <div className='flex flex-col gap-8 py-20 md:py-16 lg:py-36 px-6 md:px-14 lg:px-24 max-lg:order-2 z-10 basis-[57%] max-lg:text-center'>
           <h1 className='text-white'>About us</h1>
-          <p className='w-[458px] text-white'>
+          <p className=' text-white'>
             Founded in 2010, we are a creative agency that produces lasting
             results for our clients. We’ve partnered with many startups,
             corporations, and nonprofits alike to craft designs that make real
@@ -29,14 +25,14 @@ function AboutUs() {
             and digital experiences that connect with our clients’ audiences.
           </p>
         </div>
-        <img src={aboutHero} alt='about us hero' className='absolute right-0' />
+        <div className='basis-[43%] w-full h-full min-h-[320px] bg-[url("./assets/about/mobile/image-about-hero.jpg")] md:bg-[url("./assets/about/tablet/image-about-hero.jpg")] lg:bg-[url("./assets/about/desktop/image-about-hero.jpg")] bg-no-repeat bg-cover' />
       </Hero>
 
       <BgPattern className='left-0 top-80' />
 
       <AboutCard
         className='z-10'
-        img={worldClassTalentHero}
+        img='image-world-class-talent.jpg'
         imgSide='left'
         title='World-class talent'
         paragraphs={[
@@ -55,7 +51,7 @@ function AboutUs() {
       </Locations>
       <AboutCard
         className='z-10'
-        img={realDealHero}
+        img='image-real-deal.jpg'
         imgSide='right'
         title='The real deal'
         paragraphs={[

@@ -1,4 +1,3 @@
-import appDesignPattern from '../assets/app-design/desktop/bg-pattern-intro-app.svg'
 import airfilterImage from '../assets/app-design/desktop/image-airfilter.jpg'
 import eyecamImage from '../assets/app-design/desktop/image-eyecam.jpg'
 import faceitImage from '../assets/app-design/desktop/image-faceit.jpg'
@@ -16,11 +15,11 @@ function AppDesign() {
   return (
     <>
       <Hero
-        pattern={appDesignPattern}
-        patternClassName='-top-40 -left-16'
-        className='h-64 z-10 text-white flex flex-col justify-center gap-6 text-center'>
+        pattern='bg-[url("./assets/shared/desktop/bg-pattern-small-circle.svg")] md:bg-[url("./assets/app-design/desktop/bg-pattern-intro-app.svg")]'
+        patternClassName='w-[292px] h-[292px] bg-cover max-md:top-0 max-md:right-0 md:min-w-[867px] md:min-h-[584px] md:scale-y-[-1]'
+        className='h-80 md:h-64 z-10 text-white flex flex-col lg:flex-col justify-center gap-6 text-center max-md:px-6'>
         <h1 className='text-white'>App design</h1>
-        <p className='w-[40ch]'>
+        <p className='md:w-[40ch]'>
           Our mobile designs bring intuitive digital solutions to your customers
           right at their fingertips.
         </p>
@@ -28,7 +27,7 @@ function AppDesign() {
 
       <BgPattern className='left-0 top-32' />
 
-      <Projects className='z-10 grid-cols-3 grid-rows-2'>
+      <Projects className='z-10'>
         <Project
           img={airfilterImage}
           title='Airfilter'
@@ -55,16 +54,12 @@ function AppDesign() {
           description='A VR experience app made for Loopstudios'
         />
       </Projects>
-      <Services className='z-10 grid-cols-2'>
-        <Service
-          title='Web design'
-          to='/web-design'
-          className={`bg-[url('./assets/home/desktop/image-web-design-small.jpg')]`}
-        />
+      <Services>
+        <Service title='Web design' to='/web-design' service='web' />
         <Service
           title='Graphic design'
           to='/graphic-design'
-          className={`bg-[url('./assets/home/desktop/image-graphic-design.jpg')]`}
+          service='graphic'
         />
       </Services>
       <CallToAction />

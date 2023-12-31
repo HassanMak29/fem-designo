@@ -1,13 +1,18 @@
+import { cn } from '../lib/utils'
+
 interface LocationMapProps {
-  country: string
   map: string
+  className?: string
 }
 
-const LocationMap = ({ country, map }: LocationMapProps) => {
+const LocationMap = ({ map, className }: LocationMapProps) => {
   return (
-    <div className='col-span-1 rounded-3xl overflow-hidden'>
-      <img src={map} alt={`map of ${country}`} className='h-full' />
-    </div>
+    <div
+      className={cn(
+        `h-80 w-full md:rounded-3xl overflow-hidden z-30 bg-cover bg-no-repeat bg-[url("./assets/locations/desktop/${map}")] md:bg-[url("./assets/locations/tablet/${map}")] bg-[url("./assets/locations/desktop/${map}")]`,
+        className
+      )}
+    />
   )
 }
 

@@ -1,4 +1,3 @@
-import webDesignPattern from '../assets/shared/desktop/bg-pattern-call-to-action.svg'
 import bloggerImage from '../assets/web-design/desktop/image-blogr.jpg'
 import builderImage from '../assets/web-design/desktop/image-builder.jpg'
 import campImage from '../assets/web-design/desktop/image-camp.jpg'
@@ -17,9 +16,9 @@ function WebDesign() {
   return (
     <>
       <Hero
-        pattern={webDesignPattern}
-        patternClassName='-top-40 right-0 scale-y-[-1]'
-        className='h-64 z-10 text-white flex flex-col justify-center gap-6 text-center'>
+        pattern='bg-[url("./assets/shared/desktop/bg-pattern-small-circle.svg")] md:bg-[url("./assets/app-design/desktop/bg-pattern-intro-app.svg")]'
+        patternClassName='w-[292px] h-[292px] bg-cover max-md:top-0 max-md:right-0 md:min-w-[867px] md:min-h-[584px] md:scale-y-[-1]'
+        className='h-80 md:h-64 z-10 text-white flex flex-col lg:flex-col justify-center gap-6 text-center max-md:px-6'>
         <h1 className='text-white'>Web design</h1>
         <p className='w-[40ch]'>
           We build websites that serve as powerful marketing tools and bring
@@ -29,7 +28,7 @@ function WebDesign() {
 
       <BgPattern className='left-0 top-32' />
 
-      <Projects className='z-10 grid-cols-3 grid-rows-2'>
+      <Projects>
         <Project
           img={expressImage}
           title='Express'
@@ -61,16 +60,12 @@ function WebDesign() {
           description='Get expert training in coding, data, design, and digital marketing'
         />
       </Projects>
-      <Services className='z-10 grid-cols-2'>
-        <Service
-          title='App design'
-          to='/app-design'
-          className={`bg-[url('./assets/home/desktop/image-app-design.jpg')]`}
-        />
+      <Services>
+        <Service title='App design' to='/app-design' service='app' />
         <Service
           title='Graphic design'
           to='/graphic-design'
-          className={`bg-[url('./assets/home/desktop/image-graphic-design.jpg')]`}
+          service='graphic'
         />
       </Services>
       <CallToAction />

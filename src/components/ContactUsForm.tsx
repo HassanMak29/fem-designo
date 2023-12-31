@@ -16,7 +16,7 @@ function ContactUsForm() {
 
   return (
     <form
-      className='w-[380px] flex flex-col gap-6'
+      className='lg:w-[380px] w-full flex flex-col gap-6'
       onSubmit={handleSubmit(onSubmit)}>
       <div className='relative'>
         <input
@@ -60,11 +60,11 @@ function ContactUsForm() {
           </div>
         )}
       </div>
-      <div className='relative'>
+      <div className='relative max-md:mb-10'>
         <textarea
           {...register('message', { required: "Can't be empty" })}
           placeholder='Your message'
-          className='bg-transparent block w-full border-b-[1px] hover:border-b-[3px] border-white outline-none placeholder:text-white placeholder:opacity-50 placeholder:capitalize font-medium h-24 text-white px-4'
+          className='bg-transparent block w-full border-b-[1px] hover:border-b-[3px] border-white outline-none placeholder:text-white placeholder:opacity-50 placeholder:capitalize font-medium h-24 text-white px-4 resize-none'
           rows={6}
         />
         {errors.message && (
@@ -74,7 +74,9 @@ function ContactUsForm() {
           </div>
         )}
       </div>
-      <button className='btn white ml-auto' disabled={isSubmitting}>
+      <button
+        className='btn white mx-auto md:mx-0 md:ml-auto'
+        disabled={isSubmitting}>
         submit
       </button>
     </form>

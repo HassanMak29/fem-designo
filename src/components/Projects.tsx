@@ -7,7 +7,15 @@ interface ProjectsProps {
 }
 
 function Projects({ className, children }: ProjectsProps) {
-  return <section className={cn(`grid gap-8`, className)}>{children}</section>
+  return (
+    <section
+      className={cn(
+        `grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-2 gap-8 z-10 justify-items-center`,
+        className
+      )}>
+      {children}
+    </section>
+  )
 }
 
 export default Projects

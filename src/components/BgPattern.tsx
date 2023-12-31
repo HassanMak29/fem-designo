@@ -6,7 +6,7 @@ export default function BgPattern({ className }: { className: string }) {
     <img
       src={bgPattern}
       alt='background leaf pattern'
-      className={cn('absolute', className)}
+      className={cn('hidden lg:block absolute', className)}
     />
   )
 }

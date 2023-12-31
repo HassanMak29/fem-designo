@@ -12,14 +12,12 @@ function Hero({ className, patternClassName, pattern, children }: HeroProps) {
   return (
     <section
       className={cn(
-        'rounded-2xl bg-primaryPeach flex items-center overflow-hidden relative',
+        'md:rounded-2xl bg-primaryPeach flex flex-col lg:flex-row items-center overflow-hidden relative max-md:-mx-6 md:mx-0',
         className
       )}>
       {children}
-      <img
-        src={pattern}
-        alt='hero pattern'
-        className={cn('absolute -z-10', patternClassName)}
+      <div
+        className={cn(`absolute -z-10 bg-no-repeat`, pattern, patternClassName)}
       />
     </section>
   )

@@ -11,11 +11,7 @@
   }
 
   body {
-    @apply min-h-full text-secondaryDarkGray text-[16px] font-normal leading-[26px];
-  }
-
-  #root {
-    @apply min-h-screen flex flex-col;
+    @apply min-h-full flex flex-col items-center text-secondaryDarkGray text-[15px] md:text-[16px] font-normal leading-[25px] md:leading-[26px];
   }
 
   h1,
@@ -25,11 +21,11 @@
   }
 
   h1 {
-    @apply text-primaryBlack text-[48px] leading-[48px];
+    @apply text-primaryBlack text-[32px] leading-[36px] md:text-[48px] md:leading-[48px];
   }
 
   h2 {
-    @apply text-primaryBlack text-[40px] leading-[48px] tracking-[2px];
+    @apply text-primaryBlack text-[28px] leading-[36px] tracking-[1.4px] md:text-[40px] md:leading-[48px] md:tracking-[2px];
   }
 
   h3 {

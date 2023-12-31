@@ -4,27 +4,7 @@ import darkLogo from '../assets/shared/desktop/logo-dark.png'
 import lightLogo from '../assets/shared/desktop/logo-light.png'
 import { cn } from '../lib/utils'
 import MaxWidthWrapper from './MaxWidthWrapper'
-
-interface NavLinkProps {
-  to: string
-  text: string
-  className?: string
-}
-
-function NavLink({ to, text, className }: NavLinkProps) {
-  return (
-    <li>
-      <Link
-        to={to}
-        className={cn(
-          'hover:underline tracking-[2px] cursor-pointer',
-          className
-        )}>
-        {text}
-      </Link>
-    </li>
-  )
-}
+import { NavLink } from './NavLink'
 
 interface HeaderProps {
   invert?: boolean
@@ -35,7 +15,10 @@ function Header({ invert, className }: HeaderProps) {
   return (
     <header>
       <MaxWidthWrapper
-        className={cn('flex justify-between items-center py-16', className)}>
+        className={cn(
+          'flex justify-between items-center py-[35px] md:py-16',
+          className
+        )}>
         <Link to='/'>
           <img
             src={invert ? lightLogo : darkLogo}
@@ -43,7 +26,7 @@ function Header({ invert, className }: HeaderProps) {
             className='h-6'
           />
         </Link>
-        <nav>
+        <nav className='hidden md:block'>
           <ul className='flex items-center gap-10 text-sm uppercase'>
             <NavLink
               to='/about-us'

@@ -1,4 +1,3 @@
-import homeHeroPattern from '../assets/home/desktop/bg-pattern-hero-home.svg'
 import homeHeroPhone from '../assets/home/desktop/image-hero-phone.png'
 import BgPattern from '../components/BgPattern'
 import CallToAction from '../components/CallToAction'
@@ -11,15 +10,15 @@ function Home() {
   return (
     <>
       <Hero
-        pattern={homeHeroPattern}
-        patternClassName='top-0 right-0'
-        className='h-[640px] py-36 px-24 z-10 justify-between'>
-        <div className='h-[350px] flex flex-col justify-between'>
-          <div>
-            <h1 className='w-[540px] h-40 text-white mb-2.5'>
+        pattern='bg-[url("./assets/home/desktop/bg-pattern-hero-home.svg")]'
+        patternClassName='min-w-[640px] min-h-[640px] lg:top-0 lg:right-0 top-1/2 max-lg:-translate-y-1/2 max-md:left-0 md:max-lg:-right-[122px]'
+        className='h-[843px] lg:h-[640px] pt-20 lg:py-36 px-6 lg:px-24 z-10'>
+        <div className='h-[350px] flex flex-col lg:justify-between gap-7 lg:gap-0 items-center lg:items-stretch z-20'>
+          <div className='flex flex-col items-center text-center lg:text-left lg:items-start'>
+            <h1 className='w-[327px] md:w-[573px] lg:w-[540px] h-28 md:h-40 text-white mb-4 lg:mb-2.5'>
               Award-winning custom designs and digital branding solutions
             </h1>
-            <p className='w-[445px] text-white'>
+            <p className='w-[327px] md:w-[440px] text-white'>
               With over 10 years in the industry, we are experienced in creating
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
@@ -30,28 +29,16 @@ function Home() {
         <img
           src={homeHeroPhone}
           alt='hero phone'
-          className='absolute -right-20 -bottom-60'
+          className='absolute -bottom-[33%] scale-[1.3] lg:scale-100 max-w-[500px] lg:max-w-none lg:-right-20 lg:-bottom-60'
         />
       </Hero>
 
       <BgPattern className='left-0 top-80' />
 
-      <Services className='z-10 grid-cols-2 grid-rows-2'>
-        <Service
-          title='Web design'
-          to='web-design'
-          className={`row-span-full bg-[url('./assets/home/desktop/image-web-design-large.jpg')]`}
-        />
-        <Service
-          title='App design'
-          to='app-design'
-          className={`bg-[url('./assets/home/desktop/image-app-design.jpg')]`}
-        />
-        <Service
-          title='Graphic design'
-          to='graphic-design'
-          className={`bg-[url('./assets/home/desktop/image-graphic-design.jpg')]`}
-        />
+      <Services className='lg:grid-rows-2'>
+        <Service title='Web design' to='web-design' service='web' />
+        <Service title='App design' to='app-design' service='app' />
+        <Service title='Graphic design' to='graphic-design' service='graphic' />
       </Services>
       <HowWeWork className='z-10' />
 
