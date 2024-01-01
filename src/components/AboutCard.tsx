@@ -10,7 +10,8 @@ function AboutCardBgImage({ img, className }: AboutCardBgProps) {
   return (
     <div
       className={cn(
-        `bg-[url("./assets/about/mobile/${img}")] md:bg-[url("./assets/about/tablet/${img}")] lg:bg-[url("./assets/about/desktop/${img}")] bg-no-repeat bg-cover max-lg:h-80 basis-2/5 z-20`,
+        `bg-no-repeat bg-cover max-lg:h-80 basis-2/5 z-20`,
+        img,
         className
       )}
     />

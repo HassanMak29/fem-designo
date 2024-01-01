@@ -32,7 +32,7 @@ function AboutUs() {
 
       <AboutCard
         className='z-10'
-        img='image-world-class-talent.jpg'
+        img='bg-[url("./assets/about/mobile/image-world-class-talent.jpg")] md:bg-[url("./assets/about/tablet/image-world-class-talent.jpg")] lg:bg-[url("./assets/about/desktop/image-world-class-talent.jpg")]'
         imgSide='left'
         title='World-class talent'
         paragraphs={[
@@ -51,7 +51,7 @@ function AboutUs() {
       </Locations>
       <AboutCard
         className='z-10'
-        img='image-real-deal.jpg'
+        img='bg-[url("./assets/about/mobile/image-real-deal.jpg")] md:bg-[url("./assets/about/tablet/image-real-deal.jpg")] lg:bg-[url("./assets/about/desktop/image-real-deal.jpg")]'
         imgSide='right'
         title='The real deal'
         paragraphs={[

@@ -15,7 +15,7 @@ function Locations() {
             phone='+1 253-863-8967'
             email='contact@designo.co'
           />
-          <LocationMap map='image-map-canada.png' />
+          <LocationMap map='bg-[url("./assets/locations/desktop/image-map-canada.png")] md:bg-[url("./assets/locations/tablet/image-map-canada.png")] bg-[url("./assets/locations/desktop/image-map-canada.png")]' />
         </div>
         <div className='flex max-lg:flex-col md:gap-8 overflow-hidden'>
           <LocationInfoCard
@@ -27,7 +27,7 @@ function Locations() {
             email='contact@designo.au'
             className='lg:order-2'
           />
-          <LocationMap map='image-map-australia.png' />
+          <LocationMap map='bg-[url("./assets/locations/desktop/image-map-australia.png")] md:bg-[url("./assets/locations/tablet/image-map-australia.png")] bg-[url("./assets/locations/desktop/image-map-australia.png")]' />
         </div>
         <div className='flex max-lg:flex-col md:gap-8 overflow-hidden'>
           <LocationInfoCard
@@ -38,7 +38,7 @@ function Locations() {
             phone='078 3115 1400'
             email='contact@designo.uk'
           />
-          <LocationMap map='image-map-uk.png' />
+          <LocationMap map='bg-[url("./assets/locations/desktop/image-map-uk.png")] md:bg-[url("./assets/locations/tablet/image-map-uk.png")] bg-[url("./assets/locations/desktop/image-map-uk.png")]' />
         </div>
       </section>
 
