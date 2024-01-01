@@ -16,7 +16,7 @@ function Header({ isFooter, className }: HeaderProps) {
     <header>
       <MaxWidthWrapper
         className={cn(
-          'flex justify-between items-center py-[35px] md:py-16 relative',
+          'relative flex items-center justify-between py-[35px] md:py-16',
           className
         )}>
         <Link to='/'>

@@ -13,17 +13,17 @@ function Service({ className, title, to, service }: ServiceProps) {
   return (
     <div
       className={cn(
-        'bg-[#888] rounded-2xl flex flex-col items-center justify-center gap-6 min-h-[308px] w-[350px] md:w-full text-center',
+        'flex min-h-[308px] w-[350px] flex-col items-center justify-center gap-6 rounded-2xl bg-[#888] text-center md:w-full',
         {
-          "row-span-full bg-[url('./assets/home/mobile/image-web-design.jpg')] md:bg-[url('./assets/home/tablet/image-web-design.jpg')] lg:bg-[url('./assets/home/desktop/image-web-design-large.jpg')] bg-no-repeat bg-cover":
+          "row-span-full bg-[url('./assets/home/mobile/image-web-design.jpg')] bg-cover bg-no-repeat md:bg-[url('./assets/home/tablet/image-web-design.jpg')] lg:bg-[url('./assets/home/desktop/image-web-design-large.jpg')]":
             service === 'web',
         },
         {
-          "bg-[url('./assets/home/mobile/image-app-design.jpg')] md:bg-[url('./assets/home/tablet/image-app-design.jpg')] lg:bg-[url('./assets/home/desktop/image-app-design.jpg')] bg-no-repeat bg-cover":
+          "bg-[url('./assets/home/mobile/image-app-design.jpg')] bg-cover bg-no-repeat md:bg-[url('./assets/home/tablet/image-app-design.jpg')] lg:bg-[url('./assets/home/desktop/image-app-design.jpg')]":
             service === 'app',
         },
         {
-          "bg-[url('./assets/home/mobile/image-graphic-design.jpg')] md:bg-[url('./assets/home/tablet/image-graphic-design.jpg')] lg:bg-[url('./assets/home/desktop/image-graphic-design.jpg')] bg-no-repeat bg-cover":
+          "bg-[url('./assets/home/mobile/image-graphic-design.jpg')] bg-cover bg-no-repeat md:bg-[url('./assets/home/tablet/image-graphic-design.jpg')] lg:bg-[url('./assets/home/desktop/image-graphic-design.jpg')]":
             service === 'graphic',
         },
         className
@@ -31,7 +31,7 @@ function Service({ className, title, to, service }: ServiceProps) {
       <h2 className='uppercase text-white'>{title}</h2>
       <Link
         to={to}
-        className='text-white text-[15px] uppercase tracking-[5px] font-medium flex gap-3 items-center'>
+        className='flex items-center gap-3 text-[15px] font-medium uppercase tracking-[5px] text-white'>
         <span>View projects</span>
         <img src={rightArrow} alt='right arrow' />
       </Link>

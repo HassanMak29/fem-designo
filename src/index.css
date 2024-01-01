@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply min-h-full flex flex-col items-center text-secondaryDarkGray text-[15px] md:text-[16px] font-normal leading-[25px] md:leading-[26px];
+    @apply flex min-h-full flex-col items-center text-[15px] font-normal leading-[25px] text-secondaryDarkGray md:text-[16px] md:leading-[26px];
   }
 
   h1,
@@ -21,21 +21,21 @@
   }
 
   h1 {
-    @apply text-primaryBlack text-[32px] leading-[36px] md:text-[48px] md:leading-[48px];
+    @apply text-[32px] leading-[36px] text-primaryBlack md:text-[48px] md:leading-[48px];
   }
 
   h2 {
-    @apply text-primaryBlack text-[28px] leading-[36px] tracking-[1.4px] md:text-[40px] md:leading-[48px] md:tracking-[2px];
+    @apply text-[28px] leading-[36px] tracking-[1.4px] text-primaryBlack md:text-[40px] md:leading-[48px] md:tracking-[2px];
   }
 
   h3 {
-    @apply text-[20px] tracking-[5px] uppercase;
+    @apply text-[20px] uppercase tracking-[5px];
   }
 }
 
 @layer components {
   .btn {
-    @apply w-[152px] h-[56px] shrink-0 rounded-[8px] uppercase transition-all font-medium tracking-[1px] text-[15px];
+    @apply h-[56px] w-[152px] shrink-0 rounded-[8px] text-[15px] font-medium uppercase tracking-[1px] transition-all;
   }
 
   .btn.white {

@@ -23,7 +23,7 @@ export function NavLink({
       <Link
         to={to}
         className={cn(
-          'hover:underline tracking-[2px] cursor-pointer',
+          'cursor-pointer tracking-[2px] hover:underline',
           { 'text-white': isFooter },
           {
             'text-[24px] leading-[25px] tracking-[2px]':

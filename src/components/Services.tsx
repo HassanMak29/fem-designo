@@ -11,7 +11,7 @@ function Services({ className, children }: ServicesProps) {
     <section
       id='services'
       className={cn(
-        `grid grid-cols-1 lg:grid-cols-2 gap-8 z-10 justify-items-center`,
+        `z-10 grid grid-cols-1 justify-items-center gap-8 lg:grid-cols-2`,
         className
       )}>
       {children}

@@ -14,8 +14,8 @@ function AboutUs() {
       <Hero
         pattern='max-md:bg-[url("./assets/about/mobile/bg-pattern-hero-about-mobile.svg")] md:bg-[url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg")]'
         patternClassName='h-[292px] w-[584px] bottom-[200px] max-md:right-0 md:h-[640px] md:w-[640px] md:bottom-[100px] md:-left-[120px] lg:bottom-0 lg:left-0'
-        className='h-[725px] md:h-[632px] lg:h-[480px] z-10 justify-between'>
-        <div className='flex flex-col gap-8 py-20 md:py-16 lg:py-36 px-6 md:px-14 lg:px-24 max-lg:order-2 z-10 basis-[57%] max-lg:text-center'>
+        className='z-10 h-[725px] justify-between md:h-[632px] lg:h-[480px]'>
+        <div className='z-10 flex basis-[57%] flex-col gap-8 px-6 py-20 max-lg:order-2 max-lg:text-center md:px-14 md:py-16 lg:px-24 lg:py-36'>
           <h1 className='text-white'>About us</h1>
           <p className=' text-white'>
             Founded in 2010, we are a creative agency that produces lasting
@@ -25,7 +25,7 @@ function AboutUs() {
             and digital experiences that connect with our clients’ audiences.
           </p>
         </div>
-        <div className='basis-[43%] w-full h-full min-h-[320px] bg-[url("./assets/about/mobile/image-about-hero.jpg")] md:bg-[url("./assets/about/tablet/image-about-hero.jpg")] lg:bg-[url("./assets/about/desktop/image-about-hero.jpg")] bg-no-repeat bg-cover' />
+        <div className='h-full min-h-[320px] w-full basis-[43%] bg-[url("./assets/about/mobile/image-about-hero.jpg")] bg-cover bg-no-repeat md:bg-[url("./assets/about/tablet/image-about-hero.jpg")] lg:bg-[url("./assets/about/desktop/image-about-hero.jpg")]' />
       </Hero>
 
       <BgPattern className='left-0 top-80' />

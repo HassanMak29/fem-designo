@@ -18,7 +18,7 @@ function WebDesign() {
       <Hero
         pattern='bg-[url("./assets/shared/desktop/bg-pattern-small-circle.svg")] md:bg-[url("./assets/app-design/desktop/bg-pattern-intro-app.svg")]'
         patternClassName='w-[292px] h-[292px] bg-cover max-md:top-0 max-md:right-0 md:min-w-[867px] md:min-h-[584px] md:scale-y-[-1]'
-        className='h-80 md:h-64 z-10 text-white flex flex-col lg:flex-col justify-center gap-6 text-center max-md:px-6'>
+        className='z-10 flex h-80 flex-col justify-center gap-6 text-center text-white max-md:px-6 md:h-64 lg:flex-col'>
         <h1 className='text-white'>Web design</h1>
         <p className='w-[40ch]'>
           We build websites that serve as powerful marketing tools and bring

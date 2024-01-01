@@ -12,21 +12,21 @@ function Icon({ name, icon }: { name: string; icon: string }) {
     <img
       src={icon}
       alt={`${name} icon`}
-      className='text-3xl cursor-pointer hover:brightness-125 transition-all'
+      className='cursor-pointer text-3xl transition-all hover:brightness-125'
     />
   )
 }
 
 function Footer() {
   return (
-    <footer className='z-10 md:h-96 pt-36 pb-16 mx-auto bg-primaryBlack'>
+    <footer className='z-10 mx-auto bg-primaryBlack pb-16 pt-36 md:h-96'>
       <MaxWidthWrapper className='flex flex-col items-center text-center md:block md:text-left'>
         <Header
           isFooter={true}
-          className='p-0 md:mb-10 mb-8 md:p-0 lg:px-0 w-full'
+          className='mb-8 w-full p-0 md:mb-10 md:p-0 lg:px-0'
         />
-        <div className='h-[1px] bg-white opacity-10 w-full mb-8 md:mb-0' />
-        <nav className='block md:hidden mb-10'>
+        <div className='mb-8 h-[1px] w-full bg-white opacity-10 md:mb-0' />
+        <nav className='mb-10 block md:hidden'>
           <ul className='flex flex-col items-center gap-10 text-sm uppercase'>
             <NavLink
               to='/about-us'
@@ -41,7 +41,7 @@ function Footer() {
             <NavLink to='/contact-us' text='Contact' className={'text-white'} />
           </ul>
         </nav>
-        <div className='flex flex-col md:flex-row gap-10 md:gap-8 text-white text-base md:mt-8'>
+        <div className='flex flex-col gap-10 text-base text-white md:mt-8 md:flex-row md:gap-8'>
           <div className='basis-1/3 opacity-50'>
             <p className='font-bold'>Designo Central Office</p>
             <p>3886 Wellington Street</p>
@@ -52,7 +52,7 @@ function Footer() {
             <p>P : +1 253-863-8967</p>
             <p>M : contact@designo.co</p>
           </div>
-          <div className='mx-auto md:mx-0 md:ml-auto md:self-end flex gap-4 md:gap-2'>
+          <div className='mx-auto flex gap-4 md:mx-0 md:ml-auto md:gap-2 md:self-end'>
             <Icon name='facebook' icon={iconFacebook} />
             <Icon name='youtube' icon={iconYoutube} />
             <Icon name='twitter' icon={iconTwitter} />

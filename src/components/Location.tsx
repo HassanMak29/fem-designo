@@ -19,7 +19,7 @@ export default function Location({ img, title, bgCircleCn }: LocationProps) {
         />
         <img src={img} alt={title} className='h-52' />
       </div>
-      <h5 className='uppercase font-medium tracking-[5px] text-xl mb-8'>
+      <h5 className='mb-8 text-xl font-medium uppercase tracking-[5px]'>
         {title}
       </h5>
       <Link to='/locations'>

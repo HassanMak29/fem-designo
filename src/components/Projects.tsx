@@ -10,7 +10,7 @@ function Projects({ className, children }: ProjectsProps) {
   return (
     <section
       className={cn(
-        `grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-2 gap-8 z-10 justify-items-center`,
+        `z-10 grid grid-cols-1 justify-items-center gap-8 xl:grid-cols-3 xl:grid-rows-2`,
         className
       )}>
       {children}

@@ -13,7 +13,7 @@ interface CardProps {
 
 function Card({ src, title, text, bgCircleCn }: CardProps) {
   return (
-    <div className='flex flex-col md:flex-row lg:flex-col w-[350px] md:w-auto lg:w-[350px] items-center text-center lg:text-center md:text-start md:gap-12 lg:gap-0'>
+    <div className='flex w-[350px] flex-col items-center text-center md:w-auto md:flex-row md:gap-12 md:text-start lg:w-[350px] lg:flex-col lg:gap-0 lg:text-center'>
       <div className='relative'>
         <img
           src={bgCircle}
@@ -23,11 +23,11 @@ function Card({ src, title, text, bgCircleCn }: CardProps) {
         <img
           src={src}
           alt='illustration'
-          className='mb-12 md:mb-0 lg:mb-12 h-52 w-52'
+          className='mb-12 h-52 w-52 md:mb-0 lg:mb-12'
         />
       </div>
       <div className='md:w-[440px] lg:w-auto'>
-        <h5 className='uppercase font-medium tracking-[5px] text-xl mb-8 md:mb-4 lg:mb-8'>
+        <h5 className='mb-8 text-xl font-medium uppercase tracking-[5px] md:mb-4 lg:mb-8'>
           {title}
         </h5>
         <p>{text}</p>
@@ -44,7 +44,7 @@ function HowWeWork({ className }: HowWeWorkProps) {
   return (
     <section
       className={cn(
-        'flex gap-8 lg:flex-row flex-col items-center lg:items-stretch',
+        'flex flex-col items-center gap-8 lg:flex-row lg:items-stretch',
         className
       )}>
       <Card

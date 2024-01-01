@@ -5,8 +5,8 @@ import LocationMap from '../components/LocationMap'
 function Locations() {
   return (
     <>
-      <section className='flex flex-col gap-12 md:gap-[120px] lg:gap-8 max-md:-mx-6'>
-        <div className='flex max-lg:flex-col md:gap-8 overflow-hidden'>
+      <section className='flex flex-col gap-12 max-md:-mx-6 md:gap-[120px] lg:gap-8'>
+        <div className='flex overflow-hidden max-lg:flex-col md:gap-8'>
           <LocationInfoCard
             country='Canada'
             office='Central'
@@ -17,7 +17,7 @@ function Locations() {
           />
           <LocationMap map='bg-[url("./assets/locations/desktop/image-map-canada.png")] md:bg-[url("./assets/locations/tablet/image-map-canada.png")] bg-[url("./assets/locations/desktop/image-map-canada.png")]' />
         </div>
-        <div className='flex max-lg:flex-col md:gap-8 overflow-hidden'>
+        <div className='flex overflow-hidden max-lg:flex-col md:gap-8'>
           <LocationInfoCard
             country='Australia'
             office='AU'
@@ -29,7 +29,7 @@ function Locations() {
           />
           <LocationMap map='bg-[url("./assets/locations/desktop/image-map-australia.png")] md:bg-[url("./assets/locations/tablet/image-map-australia.png")] bg-[url("./assets/locations/desktop/image-map-australia.png")]' />
         </div>
-        <div className='flex max-lg:flex-col md:gap-8 overflow-hidden'>
+        <div className='flex overflow-hidden max-lg:flex-col md:gap-8'>
           <LocationInfoCard
             country='United Kingdom'
             office='UK'

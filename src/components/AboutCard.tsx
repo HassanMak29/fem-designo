@@ -10,7 +10,7 @@ function AboutCardBgImage({ img, className }: AboutCardBgProps) {
   return (
     <div
       className={cn(
-        `bg-no-repeat bg-cover max-lg:h-80 basis-2/5 z-20`,
+        'z-20 basis-2/5 bg-cover bg-no-repeat max-lg:h-80',
         img,
         className
       )}
@@ -35,12 +35,12 @@ function AboutCard({
   return (
     <section
       className={cn(
-        'h-[890px] md:h-[736px] lg:h-[640px] max-md:-mx-6 md:rounded-2xl flex flex-col lg:flex-row overflow-hidden',
+        'flex h-[890px] flex-col overflow-hidden max-md:-mx-6 md:h-[736px] md:rounded-2xl lg:h-[640px] lg:flex-row',
         className
       )}>
       {imgSide === 'left' ? <AboutCardBgImage img={img} /> : null}
-      <div className='bg-[#FDF3F0] basis-3/5 px-6 md:px-14 lg:px-20 py-20 md:py-24 lg:py-[154px] max-lg:text-center max-lg:order-2 relative z-10'>
-        <h2 className='text-primaryPeach mb-6 text-[32px]'>{title}</h2>
+      <div className='relative z-10 basis-3/5 bg-[#FDF3F0] px-6 py-20 max-lg:order-2 max-lg:text-center md:px-14 md:py-24 lg:px-20 lg:py-[154px]'>
+        <h2 className='mb-6 text-[32px] text-primaryPeach'>{title}</h2>
         {paragraphs.map((p, i, arr) => {
           const isLastParagraph = i !== arr.length - 1
           return (
@@ -53,7 +53,7 @@ function AboutCard({
         <img
           src={threeCirclesPattern}
           alt='three circles pattern'
-          className='absolute min-h-[584px] min-w-[584px] top-0 left-0 md:top-auto md:left-auto md:bottom-11 md:right-0 lg:bottom-0 lg:-left-1/4'
+          className='absolute left-0 top-0 min-h-[584px] min-w-[584px] md:bottom-11 md:left-auto md:right-0 md:top-auto lg:-left-1/4 lg:bottom-0'
         />
       </div>
       {imgSide === 'right' ? <AboutCardBgImage img={img} /> : null}

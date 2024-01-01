@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <main>
-        <MaxWidthWrapper className='relative grow flex flex-col gap-[120px] lg:gap-40'>
+        <MaxWidthWrapper className='relative flex grow flex-col gap-[120px] lg:gap-40'>
           <Outlet />
         </MaxWidthWrapper>
       </main>

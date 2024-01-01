@@ -16,19 +16,19 @@ function ContactUsForm() {
 
   return (
     <form
-      className='lg:w-[380px] w-full flex flex-col gap-6'
+      className='flex w-full flex-col gap-6 lg:w-[380px]'
       onSubmit={handleSubmit(onSubmit)}>
       <div className='relative'>
         <input
           {...register('name', { required: "Can't be empty" })}
           type='text'
           placeholder='Name'
-          className='bg-transparent block w-full border-b-[1px] hover:border-b-[3px] border-white outline-none placeholder:text-white placeholder:opacity-50 placeholder:capitalize font-medium h-12 text-white px-4'
+          className='block h-12 w-full border-b-[1px] border-white bg-transparent px-4 font-medium text-white outline-none placeholder:capitalize placeholder:text-white placeholder:opacity-50 hover:border-b-[3px]'
         />
         {errors.name && (
-          <div className='flex items-center gap-2 text-white italic text-xs absolute top-4 right-0'>
+          <div className='absolute right-0 top-4 flex items-center gap-2 text-xs italic text-white'>
             <span>{errors.name.message as string}</span>{' '}
-            <img src={errorIcon} alt='error icon' className='w-5 h-5' />
+            <img src={errorIcon} alt='error icon' className='h-5 w-5' />
           </div>
         )}
       </div>
@@ -37,12 +37,12 @@ function ContactUsForm() {
           {...register('email', { required: "Can't be empty" })}
           type='text'
           placeholder='Email address'
-          className='bg-transparent block w-full border-b-[1px] hover:border-b-[3px] border-white outline-none placeholder:text-white placeholder:opacity-50 placeholder:capitalize font-medium h-12 text-white px-4'
+          className='block h-12 w-full border-b-[1px] border-white bg-transparent px-4 font-medium text-white outline-none placeholder:capitalize placeholder:text-white placeholder:opacity-50 hover:border-b-[3px]'
         />
         {errors.email && (
-          <div className='flex items-center gap-2 text-white italic text-xs absolute top-4 right-0'>
+          <div className='absolute right-0 top-4 flex items-center gap-2 text-xs italic text-white'>
             <span>{errors.email.message as string}</span>{' '}
-            <img src={errorIcon} alt='error icon' className='w-5 h-5' />
+            <img src={errorIcon} alt='error icon' className='h-5 w-5' />
           </div>
         )}
       </div>
@@ -51,12 +51,12 @@ function ContactUsForm() {
           {...register('phone', { required: "Can't be empty" })}
           type='text'
           placeholder='Phone'
-          className='bg-transparent block w-full border-b-[1px] hover:border-b-[3px] border-white outline-none placeholder:text-white placeholder:opacity-50 placeholder:capitalize font-medium h-12 text-white px-4'
+          className='block h-12 w-full border-b-[1px] border-white bg-transparent px-4 font-medium text-white outline-none placeholder:capitalize placeholder:text-white placeholder:opacity-50 hover:border-b-[3px]'
         />
         {errors.phone && (
-          <div className='flex items-center gap-2 text-white italic text-xs absolute top-4 right-0'>
+          <div className='absolute right-0 top-4 flex items-center gap-2 text-xs italic text-white'>
             <span>{errors.phone.message as string}</span>{' '}
-            <img src={errorIcon} alt='error icon' className='w-5 h-5' />
+            <img src={errorIcon} alt='error icon' className='h-5 w-5' />
           </div>
         )}
       </div>
@@ -64,13 +64,13 @@ function ContactUsForm() {
         <textarea
           {...register('message', { required: "Can't be empty" })}
           placeholder='Your message'
-          className='bg-transparent block w-full border-b-[1px] hover:border-b-[3px] border-white outline-none placeholder:text-white placeholder:opacity-50 placeholder:capitalize font-medium h-24 text-white px-4 resize-none'
+          className='block h-24 w-full resize-none border-b-[1px] border-white bg-transparent px-4 font-medium text-white outline-none placeholder:capitalize placeholder:text-white placeholder:opacity-50 hover:border-b-[3px]'
           rows={6}
         />
         {errors.message && (
-          <div className='flex items-center gap-2 text-white italic text-xs absolute top-1 right-0'>
+          <div className='absolute right-0 top-1 flex items-center gap-2 text-xs italic text-white'>
             <span>{errors.message.message as string}</span>{' '}
-            <img src={errorIcon} alt='error icon' className='w-5 h-5' />
+            <img src={errorIcon} alt='error icon' className='h-5 w-5' />
           </div>
         )}
       </div>

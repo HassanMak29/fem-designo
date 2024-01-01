@@ -6,7 +6,7 @@ import { useState } from 'react'
 function Overlay({ clickHandler }: { clickHandler: () => void }) {
   return (
     <div
-      className='absolute top-[94px] left-0 right-0 bottom-0 h-screen bg-black opacity-20 z-40'
+      className='absolute bottom-0 left-0 right-0 top-[94px] z-40 h-screen bg-black opacity-20'
       onClick={clickHandler}
     />
   )
@@ -53,7 +53,7 @@ function Navigation({ isFooter }: NavigationProps) {
           {open ? (
             <>
               <Overlay clickHandler={closeMenu} />
-              <nav className='md:hidden absolute bg-black text-white z-40 top-[94px] left-0 right-0 py-12 px-6'>
+              <nav className='absolute left-0 right-0 top-[94px] z-40 bg-black px-6 py-12 text-white md:hidden'>
                 <ul className='flex flex-col items-start gap-10 text-sm uppercase'>
                   <NavLink
                     to='/about-us'

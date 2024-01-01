@@ -11,7 +11,7 @@ function MaxWidthWrapper({
   return (
     <div
       className={cn(
-        'max-w-[1440px] w-screen lg:px-[165px] px-6 md:px-10',
+        'w-screen max-w-[1440px] px-6 md:px-10 lg:px-[165px]',
         className
       )}>
       {children}

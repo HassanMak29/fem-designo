@@ -3,9 +3,9 @@ import patternCTA from '../assets/shared/desktop/bg-pattern-call-to-action.svg'
 
 function CallToAction() {
   return (
-    <section className='w-full rounded-2xl h-96 lg:h-72 bg-primaryPeach mt-auto -mb-20 px-4 lg:px-24 py-16 lg:py-20 flex flex-col lg:flex-row lg:justify-between items-center gap-8 lg:gap-0 text-center lg:text-start relative overflow-hidden z-20'>
-      <div className='md:w-[50%] z-10'>
-        <h4 className='h-24 max-lg:px-9 font-medium text-white text-[32px] lg:text-[40px] leading-[36px] lg:leading-10'>
+    <section className='relative z-20 -mb-20 mt-auto flex h-96 w-full flex-col items-center gap-8 overflow-hidden rounded-2xl bg-primaryPeach px-4 py-16 text-center lg:h-72 lg:flex-row lg:justify-between lg:gap-0 lg:px-24 lg:py-20 lg:text-start'>
+      <div className='z-10 md:w-[50%]'>
+        <h4 className='h-24 text-[32px] font-medium leading-[36px] text-white max-lg:px-9 lg:text-[40px] lg:leading-10'>
           Let’s talk about your project
         </h4>
         <p className='text-white'>
@@ -19,7 +19,7 @@ function CallToAction() {
       <img
         src={patternCTA}
         alt='call to action circles pattern'
-        className='absolute lg:right-0 min-w-[1082px] lg:min-w-0 -top-1/2 lg:top-auto'
+        className='absolute -top-1/2 min-w-[1082px] lg:right-0 lg:top-auto lg:min-w-0'
       />
     </section>
   )

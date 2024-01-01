@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 function Locations({ children }: { children: ReactNode }) {
   return (
-    <section className='flex flex-col gap-14 lg:gap-4 lg:flex-row justify-around z-10'>
+    <section className='z-10 flex flex-col justify-around gap-14 lg:flex-row lg:gap-4'>
       {children}
     </section>
   )
