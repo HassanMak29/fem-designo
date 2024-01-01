@@ -7,9 +7,11 @@ function App() {
   return (
     <>
       <Header />
-      <MaxWidthWrapper className='relative grow flex flex-col gap-[120px] lg:gap-40'>
-        <Outlet />
-      </MaxWidthWrapper>
+      <main>
+        <MaxWidthWrapper className='relative grow flex flex-col gap-[120px] lg:gap-40'>
+          <Outlet />
+        </MaxWidthWrapper>
+      </main>
       <Footer />
     </>
   )
