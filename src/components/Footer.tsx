@@ -23,7 +23,7 @@ function Footer() {
       <MaxWidthWrapper className='flex flex-col items-center text-center md:block md:text-left'>
         <Header
           invert={true}
-          className='p-0 md:mb-10 mb-8 md:px-0 lg:px-0 w-full'
+          className='p-0 md:mb-10 mb-8 md:p-0 lg:px-0 w-full'
         />
         <div className='h-[1px] bg-white opacity-10 w-full mb-8 md:mb-0' />
         <nav className='block md:hidden mb-10'>
