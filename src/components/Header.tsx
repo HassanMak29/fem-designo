@@ -4,47 +4,29 @@ import darkLogo from '../assets/shared/desktop/logo-dark.png'
 import lightLogo from '../assets/shared/desktop/logo-light.png'
 import { cn } from '../lib/utils'
 import MaxWidthWrapper from './MaxWidthWrapper'
-import { NavLink } from './NavLink'
+import Navigation from './Navigation'
 
 interface HeaderProps {
-  invert?: boolean
+  isFooter?: boolean
   className?: string
 }
 
-function Header({ invert, className }: HeaderProps) {
+function Header({ isFooter, className }: HeaderProps) {
   return (
     <header>
       <MaxWidthWrapper
         className={cn(
-          'flex justify-between items-center py-[35px] md:py-16',
+          'flex justify-between items-center py-[35px] md:py-16 relative',
           className
         )}>
         <Link to='/'>
           <img
-            src={invert ? lightLogo : darkLogo}
+            src={isFooter ? lightLogo : darkLogo}
             alt='designo logo'
             className='h-6'
           />
         </Link>
-        <nav className='hidden md:block'>
-          <ul className='flex items-center gap-10 text-sm uppercase'>
-            <NavLink
-              to='/about-us'
-              text='Our company'
-              className={invert ? 'text-white' : undefined}
-            />
-            <NavLink
-              to='/locations'
-              text='Locations'
-              className={invert ? 'text-white' : undefined}
-            />
-            <NavLink
-              to='/contact-us'
-              text='Contact'
-              className={invert ? 'text-white' : undefined}
-            />
-          </ul>
-        </nav>
+        <Navigation isFooter={isFooter} />
       </MaxWidthWrapper>
     </header>
   )

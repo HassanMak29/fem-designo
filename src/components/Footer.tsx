@@ -22,7 +22,7 @@ function Footer() {
     <footer className='z-10 md:h-96 pt-36 pb-16 mx-auto bg-primaryBlack'>
       <MaxWidthWrapper className='flex flex-col items-center text-center md:block md:text-left'>
         <Header
-          invert={true}
+          isFooter={true}
           className='p-0 md:mb-10 mb-8 md:p-0 lg:px-0 w-full'
         />
         <div className='h-[1px] bg-white opacity-10 w-full mb-8 md:mb-0' />
