@@ -47,8 +47,8 @@ function Footer() {
             <p>3886 Wellington Street</p>
             <p>Toronto, Ontario M9C 3J5</p>
           </div>
-          <div className='basis-1/3 font-bold opacity-50'>
-            <p>Contact Us (Central Office)</p>
+          <div className='basis-1/3 opacity-50'>
+            <p className='font-bold'>Contact Us (Central Office)</p>
             <p>P : +1 253-863-8967</p>
             <p>M : contact@designo.co</p>
           </div>
