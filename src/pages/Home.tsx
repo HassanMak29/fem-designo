@@ -24,7 +24,9 @@ function Home() {
               experiences. Find out more about our services.
             </p>
           </div>
-          <button className='btn white'>Learn more</button>
+          <a href='#services'>
+            <button className='btn white'>Learn more</button>
+          </a>
         </div>
         <img
           src={homeHeroPhone}

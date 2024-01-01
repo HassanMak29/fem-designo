@@ -9,6 +9,7 @@ interface ServicesProps {
 function Services({ className, children }: ServicesProps) {
   return (
     <section
+      id='services'
       className={cn(
         `grid grid-cols-1 lg:grid-cols-2 gap-8 z-10 justify-items-center`,
         className

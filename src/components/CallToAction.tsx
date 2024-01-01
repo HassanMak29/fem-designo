@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import patternCTA from '../assets/shared/desktop/bg-pattern-call-to-action.svg'
 
 function CallToAction() {
@@ -12,7 +13,9 @@ function CallToAction() {
           our expertise can help your business grow.
         </p>
       </div>
-      <button className='btn white z-10'>Get in touch</button>
+      <Link to='/contact-us' className='z-10'>
+        <button className='btn white z-10'>Get in touch</button>
+      </Link>
       <img
         src={patternCTA}
         alt='call to action circles pattern'

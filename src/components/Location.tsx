@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import bgCircle from '../assets/shared/desktop/bg-pattern-small-circle.svg'
 import { cn } from '../lib/utils'
 
@@ -21,7 +22,9 @@ export default function Location({ img, title, bgCircleCn }: LocationProps) {
       <h5 className='uppercase font-medium tracking-[5px] text-xl mb-8'>
         {title}
       </h5>
-      <button className='btn dark'>See location</button>
+      <Link to='/locations'>
+        <button className='btn dark'>See location</button>
+      </Link>
     </div>
   )
 }
